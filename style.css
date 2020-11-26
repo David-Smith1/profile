@@ -51,11 +51,7 @@ i:hover {
 
 .banner-card {
     background-image:url("images/photo-1579546929518-9e396f3cc809.jpg");
-
-    /* Set a specific height */
     height: 100%;
-  
-    /* Position and center the image to scale nicely on all screens */
     position: relative;
     height: 400px;
     box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
