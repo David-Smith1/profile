@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Permanent Marker;
+    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  }
+
 body, html {
     height: 100%;
 }
@@ -97,9 +102,9 @@ body, html {
   padding-left: 45px;
   margin: 10px;
   text-decoration: none;
-  font-weight: bold;
   margin-left: 30px;
-  font-family: arial;
+  font-family: Permanent Marker;
+  font-size: x-large;
   border: 2px solid white;
   background-color: rgba(51, 170, 0, 0);
 }
