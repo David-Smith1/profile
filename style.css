@@ -1,153 +1,660 @@
-@font-face {
-    font-family: Permanent Marker;
-    src: url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-  }
-
-body, html {
-    height: 100%;
+.fa {
+  display:inline-block;
 }
 
-
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/joker.jpg");
-  height: 80%;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+.main-navigation ul, .site-sidebar .posts-list {
+  list-style:none;
 }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.fa {
+  font:normal normal normal 14px/1 FontAwesome;
+  font-size:inherit;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+h3 {
+  text-align: right;
   color: white;
-  size: 100px;
-}
-
-.container{
-  margin-top: 15px;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.rainbow{
-  background-color: #343A40;
-  border-radius: 4px;  
-  color: #fff;
-  cursor: pointer;
-  padding-top: 17px;
-  padding-bottom: 5px;
-  padding-right: 7px;
-  padding-left: 7px;
-}
-
-.rainbow-3:hover{
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
-  animation:slidebg 2s linear infinite;
-}
-
-.rainbow-4:hover{
-   background-image:     linear-gradient(
-      to right,
-      #E7484F,
-      #F68B1D,
-      #FCED00,
-      #009E4F,
-      #00AAC3,
-      #732982
-    );
-  animation:slidebg 2s linear infinite;
-}
-
-
-.rainbow-5:hover{
-   background-image:     linear-gradient(
-      to right,
-      #E7484F,
-      #E7484F 16.65%,
-      #F68B1D 16.65%,
-      #F68B1D 33.3%,
-      #FCED00 33.3%,
-      #FCED00 49.95%,
-      #009E4F 49.95%,
-      #009E4F 66.6%,
-      #00AAC3 66.6%,
-      #00AAC3 83.25%,
-      #732982 83.25%,
-      #732982 100%,
-      #E7484F 100%
-     
-     
-     
-    );
-  animation:slidebg 2s linear infinite;
-}
-
-.rainbow-6{
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.1);
-  border-radius: 4px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-right: 45px;
-  padding-left: 45px;
-  margin: 10px;
-  text-decoration: none;
-  margin-left: 30px;
-  font-family: Permanent Marker;
-  font-size: x-large;
-  border: 2px solid white;
-  background-color: rgba(51, 170, 0, 0);
-}
-
-
-.rainbow-6:hover{
-  background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
-  animation:slidebg 2s linear infinite;
-  border: 2px solid white;
-}
-
-
-@keyframes slidebg {
-  to {
-    background-position:20vw;
-  }
-}
-
-.follow{
-  margin-top: 40px;
-}
-
-.follow a{
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-}
-
-i {
-    font-size: xx-large;
-}
-
-div > h1 {
-    font-family: arial;
-    font-size: 40px;
-}
-
-div > p {
-    font-family: arial;
-    font-size: 18px
-}
-
-::-webkit-scrollbar {
-    display: none;
+  position: absolute;
+  top: -15;
+  right: 17;
 }
 
 img {
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    border: 2px solid white;
+  border:0;
+}
+
+.main-navigation .navigation-extend-bar .social-icons {
+  float:left;
+}
+
+body,h1,h2 {
+  margin:0;
+}
+
+.fa-twitter-square:before {
+  content:"\f081";
+}
+
+.fa-facebook-square:before {
+  content:"\f082";
+}
+
+.fa-linkedin-square:before {
+  content:"\f08c";
+}
+
+.fa-github-square:before {
+  content:"\f092";
+}
+
+.fa-bars:before {
+  content:"\f0c9";
+}
+
+.fa-envelope:before {
+  content:"\f0e0";
+}
+
+html {
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  box-sizing:border-box;
+}
+
+aside,nav {
+  display:block;
+}
+
+a {
+  background:0 0;
+}
+
+a:active,a:hover {
+  outline:0;
+}
+
+strong {
+  font-weight:700;
+}
+
+.site-sidebar {
+  overflow:hidden;
+}
+
+.main-navigation,.person .person-content .person-title,.site-sidebar .block .block-title,h1,h2 {
+  text-transform:uppercase;
+}
+
+*,:after,:before {
+  box-sizing:inherit;
+}
+
+body {
+  font:16px/1.6 Roboto,Helvetica,sans-serif;font-weight:300;
+}
+
+.home-section,.person,h1,h2 {
+  -webkit-font-smoothing:antialiased;
+}
+
+h1,h2 {
+  font-weight:400;
+}
+
+::-moz-selection {
+  color:#fff;background:#a51a1a;
+}
+
+::selection {
+  color:#fff;background:#a51a1a;
+}
+
+a {
+  color:#BB1E1E;
+}
+
+h1 {
+  font-size:36px;
+}
+
+h2 {
+  font-size:30px;
+}
+
+a {
+  text-decoration:none;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+strong {
+  font-weight:500;
+}
+
+.main-navigation a,.person,.person:hover,.site-sidebar .posts-list a {
+  text-decoration:none;
+}
+
+.button {
+  display:inline-block;
+}
+
+.button {
+  padding:.4em .8em;
+  line-height:1;
+  margin-right:1em;
+}
+
+.button.button-outline {
+  border-width:1px;
+  border-style:solid;
+}
+
+.button.button-white {
+  color:#fff;
+}
+
+.button.button-icon {
+  padding:0;
+  margin-right:.2em;
+}
+
+.social-icons.social-icons a {
+  color:#fff;
+  color:rgba(255,255,255,.6);
+}
+
+.social-icons.social-icons a:hover {
+  color:#fff;
+}
+
+body {
+  background:#f6f6f6;
+}
+
+@media screen and (max-width:1000px) {
+body {
+  background:#fff;
+  }
+}
+
+.site-sidebar {
+  top:0;
+  bottom:0;
+  left:0;
+  position:fixed;
+  z-index:2;
+  width:25%;
+  font-size:14px;
+  color:#fff;
+  text-align:left;
+  background-color:rgba(145,13,13,.8);
+}
+
+@media screen and (max-width:1000px){
+.site-sidebar {
+  top:auto;
+  bottom:auto;
+  left:auto;
+  right:auto;
+  position:relative;
+  width:auto;
+  padding-top:40px;
+  padding-bottom:0;
+  }
+
+.site-sidebar:before {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:-50px;
+  content:" ";
+  display:block;
+  width:auto;
+  height:850px;
+  }
+
+.parent-home .site-sidebar:before {
+  display:none;
+  }
+}
+
+.site-sidebar .site-sidebar-inner {
+  position:relative;
+  height:100%;
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+  -ms-overflow-style:-ms-autohiding-scrollbar;
+  padding:45px 40px;
+}
+
+.site-sidebar .site-sidebar-inner::-webkit-scrollbar {
+  display:none;
+}
+
+@media screen and (max-width:1000px){
+.site-sidebar .site-sidebar-inner{
+  overflow:initial;
+  height:auto;
+  padding:0 40px;
+  }
+}
+
+.home-section .home-buttons {
+  overflow:hidden;
+}
+
+.site-sidebar .block+.block {
+  margin-top:45px;
+}
+
+.site-sidebar .block .block-title {
+  font-size:11px;
+  font-weight:300;
+  color:#aaa;
+  color:rgba(255,255,255,.5);
+  margin-bottom:15px;
+}
+
+.site-sidebar .block-social {
+  font-size:22px;
+}
+
+html:not(.platform-mac) .site-sidebar .block-blog {
+  display:none;
+}
+
+.person,.site-sidebar .posts-list>li {
+  display:block;
+}
+
+.site-sidebar .posts-list,.site-sidebar .posts-list>li {
+  margin:0;
+  padding:0;
+}
+
+.site-sidebar .posts-list li {
+  margin:15px 0;
+}
+
+.site-sidebar .posts-list a:focus .post-title,.site-sidebar .posts-list a:hover .post-title {
+  color:#fff;
+}
+
+.site-sidebar .posts-list .post-title {
+  font-size:14px;
+  font-weight:300;
+  color:#ccc;
+  color:rgba(255,255,255,.6);
+}
+
+.site-sidebar .posts-list .post-date {
+  color:#aaa;
+  color:rgba(204,204,204,.7);
+  font-size:13px;
+  line-height:24px;
+  font-weight:300;
+  font-style:italic;
+}
+
+.person {
+  color:inherit;
+}
+
+.site-sidebar .person {
+  text-align:center;
+}
+
+.person .person-avatar {
+  border-radius:50%;
+  margin-bottom:10px;
+  filter: saturate(1);
+}
+
+.person .person-avatar .avatar {
+  width:152px;
+  height:152px;
+  border-radius:50%;
+}
+
+.person .person-content {
+  margin-left:-40px;
+  margin-right:-40px;
+}
+
+.person .person-content .person-title {
+  font-size:22px;
+  font-weight:500;
+}
+
+.person .person-content .person-subtitle {
+  font-size:16px;
+  font-weight:300;
+  text-transform:uppercase;
+}
+
+.main-navigation {
+  margin:45px -40px;
+  line-height:30px;
+  position:relative;
+  font-size:14px;
+}
+
+@media screen and (max-width:1000px){
+.person .person-avatar img {
+  width:120px;
+  height:120px;
+}
+
+.main-navigation {
+  font-size:14px;
+  text-transform:uppercase;
+  line-height:50px;
+  text-align:right;
+  margin:20px -40px 0;
+  }
+}
+
+.main-navigation .navigation-extend-bar {
+  font-size:18px;
+  border:1px solid rgba(255,255,255,.2);
+  border-width:1px 0;
+  padding:0 20px;
+  display:none;
+}
+
+@media screen and (max-width:1000px){
+.main-navigation .navigation-extend-bar {
+  display:block;
+  }
+}
+
+.main-navigation .navigation-extend-bar a {
+  display:inline-block;
+}
+
+.main-navigation .navigation-extend-bar .navigation-extend-button {
+  width:50%;
+}
+
+.main-navigation ul,.main-navigation ul>li {
+  margin:0;
+  padding:0;
+}
+
+.main-navigation ul>li {
+  display:block;
+}
+
+.main-navigation ul+ul {
+  margin-top:30px;
+}
+
+.main-navigation ul li {
+  position:relative;
+  padding:0 40px;
+}
+
+@media screen and (max-width:1000px){
+.main-navigation ul+ul {
+  margin-top:0;
+  }
+.main-navigation ul li {
+  padding:0 20px;
+  }
+}
+
+.main-navigation ul li a:hover {
+  color:#fff;
+}
+
+.main-navigation a {
+  color:#ccc;
+  color:rgba(255,255,255,.6);
+  display:block;
+}
+
+.main-navigation a:focus,.main-navigation a:hover {
+  color:#fff;
+}
+
+@media screen and (min-width:1001px){
+.main-navigation a:hover:after {
+  content:" \f105 ";
+  padding-left:3px;
+  font-family:FontAwesome;
+  }
+}
+
+.site-main {
+  margin-left:25%;
+}
+
+.site-main:before {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:auto;
+  content:" ";
+  display:block;
+  width:25%;
+  background:url(https://i1.wp.com/wallur.com/wp-content/uploads/2016/12/kyoto-background-9.jpg?fit=1920%2C1080) top center no-repeat #bababa;
+  background-size:cover;
+}
+
+@media screen and (max-width:1000px){
+.main-navigation .navigation-extendable {
+  height:0;
+  -webkit-transition:height .5s;
+  transition:height .5s;
+  }
+
+.site-main {
+  margin-left:0;
+  }
+
+.site-main:before {
+  display:none;
+}
+
+.parent-home .site-main:before {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  display:block;
+  width:auto;
+  background-position:right top;
+  }
+}
+
+.site-main .site-main-inner {
+  position:relative;
+}
+
+@media screen and (max-width:1000px){
+.block-blog,.block-social {
+  display:none;
+  }
+}
+
+.home-section {
+  position:fixed;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:1;
+  background:url(https://i1.wp.com/wallur.com/wp-content/uploads/2016/12/kyoto-background-9.jpg?fit=1920%2C1080) top center no-repeat #bababa;
+  background-size:cover;
+  color:#fff;
+  padding-left:110px;
+  padding-top:130px;
+  text-shadow:1px 1px 2px rgba(0,0,0,.6);
+  font-size:12px;
+}
+
+@media screen and (max-width:1000px){
+.home-section {
+  position:relative;
+  padding:40px 20px;
+  background:0 0;
+  font-size:10px;
+  }
+}
+
+@media screen and (max-width:767px){
+.home-section {
+  font-size:8px;
+  }
+}
+
+@media screen and (max-width:567px){
+.home-section {
+  font-size:7px;
+  }
+}
+
+.home-section .home-section-inner {
+  max-width:840px;
+  margin-left:25%;
+  margin-top: 35px;
+}
+
+@media screen and (max-width:1000px){
+.home-section .home-section-inner {
+  margin:0;
+  }
+}
+
+.home-section .home-heading {
+  font-size:4em;
+  font-weight:500;
+}
+
+.home-section .home-subheading {
+  font-size:3em;
+  font-weight:300;
+  text-transform:none;
+}
+
+.home-section .home-subheading strong {
+  font-weight:500;
+}
+
+.home-section .home-buttons {
+  margin-top:3.8em;
+  font-size:2em;
+  -webkit-animation-name:fadein;
+  animation-name:fadein;
+  -webkit-animation-duration:2s;
+  animation-duration:2s;
+  -webkit-animation-iteration-count:1;
+  animation-iteration-count:1;
+  -webkit-animation-timing-function:ease-in-out;
+  animation-timing-function:ease-in-out;
+}
+
+@media screen and (max-width:1000px){
+.home-section .home-buttons {
+  margin-top:1em;
+}
+}
+
+.home-section .home-buttons .button {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
+  text-transform:uppercase;
+  font-weight:300;
+  text-decoration:none;
+  opacity:.8;
+  box-shadow:1px 1px 2px rgba(0,0,0,.47);
+  margin-bottom:1em;
+}
+
+@media screen and (max-width:767px){
+.home-section .home-buttons {
+  font-size:18px;
+}
+
+.home-section .home-buttons .button {
+  margin:1em 0 0;
+  float:left;
+  clear:both;
+}
+}
+
+.home-section .home-buttons .button:active,.home-section .home-buttons .button:focus,.home-section .home-buttons .button:hover {
+  opacity:1;
+}
+
+@media screen and (max-width:1000px){
+body.parent-home .site-sidebar {
+  padding-top:0;
+}
+
+body.parent-home .site-sidebar .person {
+  display:none;
+}
+
+body.parent-home .site-sidebar .main-navigation {
+  margin-top:0;
+}
+}
+
+@-webkit-keyframes fadein{0%,50%{opacity:0;}to{opacity:1;}}
+@keyframes fadein{0%,50%{opacity:0;}to{opacity:1;}}
+
+@font-face {
+  font-family:FontAwesome;
+  src:url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?v=4.2.0);
+  src:url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0) format('embedded-opentype'),url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.woff?v=4.2.0) format('woff'),url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.ttf?v=4.2.0) format('truetype'),url(https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular) format('svg');
+  font-weight:400;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:Roboto;
+  font-style:italic;
+  font-weight:300;
+  src:local('Roboto Light Italic'),local('Roboto-LightItalic'),url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51TjASc6CsE.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:Roboto;
+  font-style:italic;
+  font-weight:500;
+  src:local('Roboto Medium Italic'),local('Roboto-MediumItalic'),url(https://fonts.gstatic.com/s/roboto/v20/KFOjCnqEu92Fr1Mu51S7ACc6CsE.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:Roboto;
+  font-style:normal;
+  font-weight:300;
+  src:local('Roboto Light'),local('Roboto-Light'),url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc9.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:Roboto;
+  font-style:normal;
+  font-weight:400;
+  src:local('Roboto'),local('Roboto-Regular'),url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+
+@font-face {
+  font-family:Roboto;
+  font-style:normal;
+  font-weight:500;
+  src:local('Roboto Medium'),local('Roboto-Medium'),url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf) format('truetype');
 }
