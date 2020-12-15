@@ -80,13 +80,22 @@ body,h1,h2 {
   content:"\f092";
 }
 
+.fa-map-marker:before {
+  content:"\f041";
+}
+
 .fa-bars:before {
   content:"\f0c9";
+  position: absolute;
+  top: 17px;
+  right: 19px;
 }
 
 .fa-envelope:before {
   content:"\f0e0";
 }
+
+
 
 html {
   font-family:sans-serif;
@@ -198,6 +207,15 @@ strong {
 .social-icons.social-icons a {
   color:#fff;
   color:rgba(255,255,255,.6);
+}
+
+.extender a {
+  color:#fff;
+  color:rgba(255,255,255,.6);
+}
+
+.extender a:hover {
+  color:#fff;
 }
 
 .social-icons.social-icons a:hover {
@@ -398,6 +416,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
   border-width:1px 0;
   padding:0 20px;
   display:none;
+  height: 48px;
 }
 
 @media screen and (max-width:1000px){
@@ -412,6 +431,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 
 .main-navigation .navigation-extend-bar .navigation-extend-button {
   width:50%;
+  height: 40px;
 }
 
 .main-navigation ul,.main-navigation ul>li {
@@ -482,10 +502,12 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 
 @media screen and (max-width:1000px){
 .main-navigation .navigation-extendable {
-  height:0;
+  height: 0px;
   -webkit-transition:height .5s;
   transition:height .5s;
+  /*with js navigation extendable should transition to height 150px but should not push other content down*/
   }
+
 
 .site-main {
   margin-left:0;
@@ -557,7 +579,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
     background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80);
     opacity: 80%
   }
-  
+ 
   .card:hover {
     opacity: 100%;
   }
@@ -577,7 +599,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
     background-image: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHw%3D&w=1000&q=80);
     opacity: 80%
   }
-  
+ 
   .card:hover {
     opacity: 100%;
   }
