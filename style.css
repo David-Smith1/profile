@@ -44,6 +44,7 @@ html {
 }
 
 
+
 h3 {
   text-align: right;
   color: white;
@@ -334,6 +335,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 
 .site-sidebar .posts-list a:focus .post-title,.site-sidebar .posts-list a:hover .post-title {
   color:#fff;
+  /* change focus selector to not apply to fa-fa-bars when not activated */
 }
 
 .site-sidebar .posts-list .post-title {
@@ -468,7 +470,7 @@ html:not(.platform-mac) .site-sidebar .block-blog {
 .main-navigation a {
   color:#ccc;
   color:rgba(255,255,255,.6);
-  display:block;
+/* display: inline block if code get weird */
 }
 
 .main-navigation a:focus,.main-navigation a:hover {
@@ -507,6 +509,14 @@ html:not(.platform-mac) .site-sidebar .block-blog {
   transition:height .5s;
   /*with js navigation extendable should transition to height 150px but should not push other content down*/
   }
+  
+ .main-navigation .navigation-extendable-2 {
+   height: 148px;
+   -webkit-transition:height .5s;
+   transition:height .5s;
+  /*with js navigation extendable should transition to height 150px but should not push other content down*/
+  }
+
 
 
 .site-main {
